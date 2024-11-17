@@ -10,7 +10,7 @@ state_dict = load_file(safetensors_file)
 # Save the model weights as a PyTorch model
 torch.save(state_dict, r"C:/Users/HP/OneDrive/Bureau/summerization_text/bart_finetuned/pytorch_model.bin")
 
-model_directory = r"C:/Users/HP/OneDrive/Bureau/summerization_text/bart_finetuned"
+model_directory = "/app/model"
 
 # Load the model from the safetensors file
 model = BartForConditionalGeneration.from_pretrained(model_directory)
